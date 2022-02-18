@@ -8,9 +8,10 @@ Version: 1.0
 Author: EOS DA
 Author URI: https://eos.com/
 */
-require_once(plugin_dir_path(__FILE__) . 'inc/import-check.php');
-require_once(plugin_dir_path(__FILE__) . 'inc/import-run.php');
-require_once(plugin_dir_path(__FILE__) . 'inc/export-run.php');
+
+require_once( plugin_dir_path(__FILE__) . 'inc/import-check.php' );
+require_once( plugin_dir_path(__FILE__) . 'inc/import-run.php' );
+require_once( plugin_dir_path(__FILE__) . 'inc/export-run.php' );
 
 function acf_find_replace_assets() {
     wp_register_style('acf-find-replace-styles', plugin_dir_url(__FILE__) . 'assets/css/style.css');
